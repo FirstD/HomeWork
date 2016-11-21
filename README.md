@@ -13,3 +13,5 @@
 ![](https://github.com/FirstD/HomeWork/blob/master/image/bill.PNG)<br>
 ![](https://github.com/FirstD/HomeWork/blob/master/image/modify.PNG)<br>
 ##UML
+![](https://github.com/FirstD/HomeWork/blob/master/image/UML1.jpg)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/UML2.png)<br>
