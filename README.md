@@ -41,5 +41,12 @@
 基于以上思考，系统被发开出来，当然是以一个简洁易懂、大众化的操作模式而进行，所以就客户界面来说，界面的简洁明了，让每一个客户都能够一眼看明白，知道那块是那块的功能，而管理员的界面也是如此，再加上经费和技术上的支持，以及现今状况的需求，总的来说，本系统的开发是可操作的。<br>
 #上周任务进度
 ##用例建模
+![](https://github.com/jiamianqishixuhao/HomeWork/blob/patch-1/image/yongli1.png)<br>
+![](https://github.com/jiamianqishixuhao/HomeWork/blob/patch-1/image/yongli2.png)<br>
+![](https://github.com/jiamianqishixuhao/HomeWork/blob/patch-1/image/yongli3.png)<br>
+![](https://github.com/jiamianqishixuhao/HomeWork/blob/patch-1/image/yongli4.png)<br>
+![](https://github.com/jiamianqishixuhao/HomeWork/blob/patch-1/image/yongli5.png)<br>
+
 ##业务流程分析
-##前端网页设计，主页，用户界面，管理员界面等，在开发中，后台开发也同时进行，同时也在进行过程分析和数据分析。
+![](https://github.com/jiamianqishixuhao/HomeWork/blob/patch-1/image/flow.png)<br>
+##前端网页设计，主页，用户界面，管理员界面等都基本开发完毕，后台开发也同时进行并与前端同步，同时也在进行过程分析和数据分析，报告撰写。
