@@ -49,4 +49,15 @@
 
 ##业务流程分析
 ![](https://github.com/FirstD/HomeWork/blob/master/image/flow.png)<br>
-##前端网页设计，主页，用户界面，管理员界面等都基本开发完毕，后台开发也同时进行并与前端同步，同时也在进行过程分析和数据分析，报告撰写。
+##前端网页设计，主页，用户界面，管理员界面等都基本开发完毕，后台开发也同时进行并与前端同步，同时也在进行过程分析和数据分析，报告撰写。#前段页面全部开发完毕，并已上传，后台开发即将收尾。
+![](https://github.com/FirstD/HomeWork/blob/master/image/功能结构图.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/业务流程图.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/数据流图.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/数据模型2.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/注册事件.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/用户信息修改事件.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/账单查询事件.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/车位查询事件.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/预约查询事件.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/预约订单处理事件.png)<br>
+![](https://github.com/FirstD/HomeWork/blob/master/image/支付预约金事件.png)<br>
