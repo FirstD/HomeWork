@@ -7,15 +7,18 @@
 	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
 	<constant name="struts.multipart.maxSize" value="100000000" />
 	<package name="default" namespace="/" extends="struts-default">
-		<action name="VipSRO" class="com.ParkMIS.Action.VipSignRegisterOutAction">
-			<result name="register">/WEB-INF/content/vip.jsp</result>
-			<result name="Rfailed">/WEB-INF/content/register.jsp</result>
-			<result name="success">/WEB-INF/content/vip.jsp</result>
-			<result name="Sfailed">/WEB-INF/content/index.jsp</result>
-			<result name="out">/WEB-INF/content/index.jsp</result>
+		
+		<action name="ParkAction_*"  method="{1}" class="com.ParkMIS.Action.ParkAction">
+			<result name="success">/WEB-INF/content/{1}.jsp</result>
 		</action>
+		
+		<action name="ManageAction_*"  method="{1}" class="com.ParkMIS.Action.ManageAction">
+			<result name="success">/WEB-INF/content/{1}.jsp</result>
+		</action>
+		
 		<action name="*">
 			<result>/WEB-INF/content/{1}.jsp</result>
 		</action>
+		
 	</package>
 </struts>

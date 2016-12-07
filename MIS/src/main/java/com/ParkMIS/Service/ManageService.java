@@ -1,5 +1,7 @@
 package com.ParkMIS.Service;
 
+import java.util.List;
+
 import com.ParkMIS.DAO.ManageDAO;
 import com.ParkMIS.entity.Manage;
 
@@ -20,5 +22,8 @@ public class ManageService {
 	public void setManageDAO(ManageDAO manageDAO) {
 		this.manageDAO = manageDAO;
 	};
-	
+	public List<Manage> hy(int vid) throws Exception{
+		return manageDAO.hy(vid);
+		
+	}
 }
