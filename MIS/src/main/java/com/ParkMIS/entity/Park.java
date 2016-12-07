@@ -2,6 +2,9 @@ package com.ParkMIS.entity;
 
 public class Park {
 	private int pid;
+	private int oid;
+    private int ch;
+	private String state;
 	private String name;
 	private int MaxSite;
 	private String place;
@@ -10,6 +13,25 @@ public class Park {
 	}
 	public void setPid(int pid) {
 		this.pid = pid;
+	}
+	public int getOid() {
+		return oid;
+	}
+	public void setOid(int oid) {
+		this.oid = oid;
+	}
+
+	public String getState() {
+		return state;
+	}
+	public int getCh() {
+		return ch;
+	}
+	public void setCh(int ch) {
+		this.ch = ch;
+	}
+	public void setState(String state) {
+		this.state = state;
 	}
 	public String getName() {
 		return name;
@@ -30,14 +52,5 @@ public class Park {
 		this.place = place;
 	}
 	
-	public Park(String name, int maxSite,String place) {
-		super();
-		this.name = name;
-		this.place=place;
-		this.MaxSite = maxSite;
-	}
-	public Park() {
-		super();
-	}
 	
 }

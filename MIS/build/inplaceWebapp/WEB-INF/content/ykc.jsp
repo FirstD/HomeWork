@@ -1,9 +1,10 @@
 ﻿<%@ page language="java" contentType="text/html; utf-8"
     pageEncoding="utf-8"%>
+    <%@ taglib uri="/struts-tags" prefix="s"%> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
 	<!-- Bootstrap Styles-->
@@ -64,10 +65,10 @@
                   
                     <ul class="dropdown-menu dropdown-user">
                        
-                        <li><a href="注册.html"><i class="fa fa-gear fa-fw"></i>注册</a>
+                        <li><a href="register"><i class="fa fa-gear fa-fw"></i>注册</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+                        <li><a href="index"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -109,21 +110,23 @@
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
+                                        <s:iterator id="list" value="#request.list">
                                         <tbody>
                                             <tr>
                                             
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td><s:property value="#list.pid"/></td>
+                                                <td><s:property value="#list.ch"/></td>
+                                                <td>5元/h</td>
+                                                <td><s:property value="#list.state"/></td>
                                                 <td>
-                                                    <a href="注册.html" class="btn btn-primary btn-sm">注册会员</a>
+                                                    <a href="register" class="btn btn-primary btn-sm">注册会员</a>
                                                     
                                                 </td>
                                             </tr>
                                            
 
                                         </tbody>
+                                        </s:iterator>
                                     </table>
                                 </div>
                             </div>

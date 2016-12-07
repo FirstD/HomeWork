@@ -1,5 +1,7 @@
 package com.ParkMIS.Service;
 
+import java.util.List;
+
 import com.ParkMIS.DAO.ParkDAO;
 import com.ParkMIS.entity.Park;
 
@@ -19,6 +21,13 @@ public class ParkService {
 	}
 	public void setParkDAO(ParkDAO parkDAO) {
 		this.parkDAO = parkDAO;
+	}
+	public List<Park> hkc(int pid){
+		return parkDAO.hkc(pid);
+		
+	}
+	public List<Park> ykc(int pid){
+		return parkDAO.ykc(pid);
 	}
 	
 }

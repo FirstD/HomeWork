@@ -21,13 +21,7 @@ public class AdminServiceTest {
 		Ps.setParkDAO(PImpl);;
 	}
 
-	@Test
-	public void test() {
-		Park park=new Park("徐州停车场",100,"华中");
-		Ps.add(park);
-		Admin admin=new Admin("Jie","Jie",2,"System管理员");
-		Ads.add(admin);
-	}
+
 	@After
 	public void end(){
 		System.out.println("success");
