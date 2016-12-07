@@ -5,6 +5,7 @@ public class Admin {
 	private String name;
 	private String password;
 	private int pid;
+	private String power;
 	
 	public int getAid() {
 		return aid;
@@ -30,11 +31,19 @@ public class Admin {
 	public void setPid(int pid) {
 		this.pid = pid;
 	}
-	public Admin(String name, String password, int pid) {
+	
+	public String getPower() {
+		return power;
+	}
+	public void setPower(String power) {
+		this.power = power;
+	}
+	public Admin(String name, String password, int pid,String power) {
 		super();
 		this.name = name;
 		this.password = password;
 		this.pid = pid;
+		this.power=power;
 	}
 	public Admin() {
 		super();
