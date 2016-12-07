@@ -8,6 +8,14 @@ public class Manage {
 	private int oid;
 	private int vid;
 	private Date appTime;
+	private String apTime;
+	
+	public String getApTime() {
+		return apTime;
+	}
+	public void setApTime(String apTime) {
+		this.apTime = apTime;
+	}
 	private Date startTime;
 	private Date endTime;
 	private String YN;

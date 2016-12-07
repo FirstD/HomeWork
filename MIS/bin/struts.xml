@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- Struts2的所有Action都需位于package下 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.multipart.maxSize" value="100000000" />
+	<package name="default" namespace="/" extends="struts-default">
+		
+		<action name="ParkAction_*"  method="{1}" class="com.ParkMIS.Action.ParkAction">
+			<result name="success">/WEB-INF/content/{1}.jsp</result>
+		</action>
+		
+		<action name="ManageAction_*"  method="{1}" class="com.ParkMIS.Action.ManageAction">
+			<result name="success">/WEB-INF/content/{1}.jsp</result>
+		</action>
+		
+		<action name="*">
+			<result>/WEB-INF/content/{1}.jsp</result>
+		</action>
+		
+	</package>
+</struts>
