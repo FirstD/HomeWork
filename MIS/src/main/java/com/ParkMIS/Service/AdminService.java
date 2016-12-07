@@ -14,6 +14,9 @@ public class AdminService {
 	public boolean update(Admin adminO,Admin adminN){
 		return adminDAO.update(adminO, adminN);
 	}
+	public Admin getAdmin(Admin admin){
+		return adminDAO.getAdmin(admin);
+	}
 	public AdminDAO getAdminDAO() {
 		return adminDAO;
 	}

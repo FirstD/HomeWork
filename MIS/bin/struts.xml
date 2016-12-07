@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- Struts2的所有Action都需位于package下 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.multipart.maxSize" value="100000000" />
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="VipSRO" class="com.ParkMIS.Action.VipSignRegisterOutAction">
+			<result name="register">/WEB-INF/content/vip.jsp</result>
+			<result name="Rfailed">/WEB-INF/content/register.jsp</result>
+			<result name="success">/WEB-INF/content/vip.jsp</result>
+			<result name="Sfailed">/WEB-INF/content/index.jsp</result>
+			<result name="out">/WEB-INF/content/index.jsp</result>
+		</action>
+		<action name="*">
+			<result>/WEB-INF/content/{1}.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -8,8 +8,8 @@ public class ParkDAOImpl implements ParkDAO {
 	@Override
 	public boolean add(Park park) {
 		// TODO Auto-generated method stub
-		return DbUtil.executeUpdate("insert into park values(?,?,?)",
-				new Object[]{park.getPid(),park.getName(),park.getMaxSite()});
+		return DbUtil.executeUpdate("insert into park values(?,?,?,?)",
+				new Object[]{park.getPid(),park.getName(),park.getMaxSite(),park.getPlace()});
 	}
 
 	@Override
@@ -22,8 +22,8 @@ public class ParkDAOImpl implements ParkDAO {
 	@Override
 	public boolean update(Park parkN, Park parkO) {
 		// TODO Auto-generated method stub
-		return DbUtil.executeUpdate("update park set name=?,maxSite=? where pid=?",
-				new Object[]{parkN.getName(),parkN.getMaxSite(),parkO.getPid()});
+		return DbUtil.executeUpdate("update park set name=?,maxSite=?,place=?where pid=?",
+				new Object[]{parkN.getName(),parkN.getMaxSite(),parkN.getPlace(),parkO.getPid()});
 	}
 
 	

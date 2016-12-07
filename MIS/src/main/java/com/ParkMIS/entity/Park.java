@@ -4,6 +4,7 @@ public class Park {
 	private int pid;
 	private String name;
 	private int MaxSite;
+	private String place;
 	public int getPid() {
 		return pid;
 	}
@@ -22,10 +23,18 @@ public class Park {
 	public void setMaxSite(int maxSite) {
 		MaxSite = maxSite;
 	}
-	public Park(String name, int maxSite) {
+	public String getPlace() {
+		return place;
+	}
+	public void setPlace(String place) {
+		this.place = place;
+	}
+	
+	public Park(String name, int maxSite,String place) {
 		super();
 		this.name = name;
-		MaxSite = maxSite;
+		this.place=place;
+		this.MaxSite = maxSite;
 	}
 	public Park() {
 		super();
