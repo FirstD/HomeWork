@@ -14,6 +14,9 @@ public class VipService {
 	public boolean update(Vip vip,Vip vip1){
 		return vipDAO.update(vip, vip1);
 	}
+	public Vip getVip(Vip vip){
+		return vipDAO.getVip(vip);
+	}
 	public VipDAO getVipDAO() {
 		return vipDAO;
 	}

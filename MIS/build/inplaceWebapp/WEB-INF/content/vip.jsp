@@ -13,21 +13,21 @@
 </head>
 <body>
 <ul class="menu">
-  <li tabindex="1"> <a href="会员空位查询.html"><span class="title">空位查询</span></a>
+  <li tabindex="1"> <a href="hkc"><span class="title">空位查询</span></a>
      
   </li>
- <li tabindex="1">  <a href="会员信息查询.html"><span class="title">历史记录查询</span></a>
+ <li tabindex="1">  <a href="hxc"><span class="title">历史记录查询</span></a>
     
   </li>
-  <li tabindex="1"> <a href="会员预约.html"> <span class="title">我的预约</span></a>
+  <li tabindex="1"> <a href="hy"> <span class="title">我的预约</span></a>
   
-  <li tabindex="1">  <a href="会员资料修改.html"> <span class="title">修改资料</span></a>
+  <li tabindex="1">  <a href="hzx"> <span class="title">修改资料</span></a>
    
   </li>
   <li tabindex="1"> <span class="title">联系我们</span>
    
   </li>
-  <li tabindex="1">  <a href="index.html"><span class="title">退出登录</span></a>
+  <li tabindex="1">  <a href="VipSRO!out"><span class="title">退出登录</span></a>
   
   </li>
  

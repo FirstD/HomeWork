@@ -15,7 +15,7 @@ public class DbUtil {
 			dataSource.setDriverClass("com.mysql.jdbc.Driver");
 			dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/mis");
 			dataSource.setUser("root");
-			dataSource.setPassword("123456");
+			dataSource.setPassword("19950824");
 			dataSource.setInitialPoolSize(50);
 			dataSource.setMaxPoolSize(100);
 			dataSource.setMaxIdleTime(10000);
