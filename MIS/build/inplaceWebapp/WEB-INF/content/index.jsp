@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; utf-8"
     pageEncoding="utf-8"%>
+    <%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,9 +14,10 @@
 <p id="login_defeat">账号或密码错误</p>
 <div id="login_content" class="contruct">
     <div id="login_content_logo" class="container"><img src="images/logo_large.png" width="677" height="298"></div>
+     <div id="login_content_logo" class="container"><s:property value="msg"/></div>
     <div id="login_content_log">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
     <div id="login_content_reg"><a href="register">注&nbsp;&nbsp;&nbsp;&nbsp;册</a></div>
-    <div id="login_content_reg"><a href="ykc.html">空&nbsp;&nbsp;位&nbsp;&nbsp;查&nbsp;&nbsp询</a></div>
+    <div id="login_content_reg"><a href="fc">空&nbsp;&nbsp;位&nbsp;&nbsp;查&nbsp;&nbsp询</a></div>
 	
     <div id="login_content_log_02">
         <form name="form" action="VipSRO!sign">

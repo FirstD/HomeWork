@@ -7,13 +7,49 @@
 	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
 	<constant name="struts.multipart.maxSize" value="100000000" />
 	<package name="default" namespace="/" extends="struts-default">
-		
+		<action name="AdminSRO" class="com.ParkMIS.Action.AdminSignRegisterOutAction">
+			<result name="register" type="chain">ParkAction_baa</result>
+			<result name="Rfailed" type="chain">ParkAction_baa</result>
+			<result name="success" type="chain">ParkAction_ag</result>
+			<result name="ax">/WEB-INF/content/ax.jsp</result>
+			<result name="balogin">/WEB-INF/content/bpg.jsp</result>
+			<result name="Sfailed">/WEB-INF/content/index2.jsp</result>
+			<result name="out">/WEB-INF/content/index2.jsp</result>
+			<result name="bax">/WEB-INF/content/bax.jsp</result>
+		</action>
+		<action name="VipSRO" class="com.ParkMIS.Action.VipSignRegisterOutAction">
+			<result name="register">/WEB-INF/content/vip.jsp</result>
+			<result name="Rfailed">/WEB-INF/content/register.jsp</result>
+			<result name="success">/WEB-INF/content/vip.jsp</result>
+			<result name="Sfailed">/WEB-INF/content/index.jsp</result>
+			<result name="out">/WEB-INF/content/index.jsp</result>
+			<result name="bhg">/WEB-INF/content/bhg.jsp</result>
+			<result name="bhg1">/WEB-INF/content/bhg.jsp</result>
+			<result name="vx">/WEB-INF/content/index.jsp</result>
+		</action>
 		<action name="ParkAction_*"  method="{1}" class="com.ParkMIS.Action.ParkAction">
 			<result name="success">/WEB-INF/content/{1}.jsp</result>
+			<result name="add">/WEB-INF/content/bpa.jsp</result>
 		</action>
 		
 		<action name="ManageAction_*"  method="{1}" class="com.ParkMIS.Action.ManageAction">
 			<result name="success">/WEB-INF/content/{1}.jsp</result>
+			<result name="ok" type="chain">ParkAction_ag</result>
+			<result name="no" type="chain">ManageAction_hy</result>
+			<result name="appiont" type="chain">ManageAction_hy</result>
+		</action>
+		<action name="RecordAction_*"  method="{1}" class="com.ParkMIS.Action.RecordAction">
+			<result name="success">/WEB-INF/content/{1}.jsp</result>
+		</action>
+		
+		<action name="VipAction_*"  method="{1}" class="com.ParkMIS.Action.VipAction">
+			<result name="success">/WEB-INF/content/{1}.jsp</result>
+		</action>
+		
+		
+		<action name="Email_*"  method="{1}" class="com.ParkMIS.Action.Email">
+			<result name="success" type="chain">VipAction_yj</result>
+			<result name="emailUs">/WEB-INF/content/emailUs.jsp</result>
 		</action>
 		
 		<action name="*">

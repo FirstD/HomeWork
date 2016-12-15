@@ -7,18 +7,10 @@ public class Manage {
 	private int aid;
 	private int oid;
 	private int vid;
-	private Date appTime;
-	private String apTime;
-	
-	public String getApTime() {
-		return apTime;
-	}
-	public void setApTime(String apTime) {
-		this.apTime = apTime;
-	}
-	private Date startTime;
-	private Date endTime;
-	private String YN;
+	private String appTime;
+	private String startTime;
+	private String endTime;
+	private String yesNo;
 	public int getMid() {
 		return mid;
 	}
@@ -43,43 +35,42 @@ public class Manage {
 	public void setVid(int vid) {
 		this.vid = vid;
 	}
-	public Date getAppTime() {
+	
+	public String getAppTime() {
 		return appTime;
 	}
-	public void setAppTime(Date appTime) {
+	public void setAppTime(String appTime) {
 		this.appTime = appTime;
 	}
-	public Date getStartTime() {
+	public String getStartTime() {
 		return startTime;
 	}
-	public void setStartTime(Date startTime) {
+	public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
-	public Date getEndTime() {
+	public String getEndTime() {
 		return endTime;
 	}
-	public void setEndTime(Date endTime) {
+	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
-	public String getYN() {
-		return YN;
+	
+	public String getYesNo() {
+		return yesNo;
 	}
-	public void setYN(String yN) {
-		YN = yN;
+	public void setYesNo(String yesNo) {
+		this.yesNo = yesNo;
 	}
-	public Manage(int mid, int aid, int oid, int vid, Date appTime, Date startTime, Date endTime, String yN) {
+	
+	
+	public Manage(int oid, int vid, String appTime, String yesNo) {
 		super();
-		this.mid = mid;
-		this.aid = aid;
 		this.oid = oid;
 		this.vid = vid;
 		this.appTime = appTime;
-		this.startTime = startTime;
-		this.endTime = endTime;
-		YN = yN;
+		this.yesNo = yesNo;
 	}
 	public Manage() {
 		super();
 	}
-	
 }

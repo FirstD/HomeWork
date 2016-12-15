@@ -1,12 +1,45 @@
 package com.ParkMIS.entity;
 
+
 public class Record {
 	private int rid;
 	private int mid;
-	private int feed;
+	private long feed;
 	private int billNumber;
+	private String name;
+	private String pname;
+	private int ch;
+	private String startTime;
+	
+	public String getStartTime() {
+		return startTime;
+	}
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+	private String eddTime;
+
 	public int getRid() {
 		return rid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getCh() {
+		return ch;
+	}
+	public void setCh(int ch) {
+		this.ch = ch;
+	}
+	
+	public String getEddTime() {
+		return eddTime;
+	}
+	public void setEddTime(String eddTime) {
+		this.eddTime = eddTime;
 	}
 	public void setRid(int rid) {
 		this.rid = rid;
@@ -17,10 +50,10 @@ public class Record {
 	public void setMid(int mid) {
 		this.mid = mid;
 	}
-	public int getFeed() {
+	public long getFeed() {
 		return feed;
 	}
-	public void setFeed(int feed) {
+	public void setFeed(long feed) {
 		this.feed = feed;
 	}
 	public int getBillNumber() {
@@ -29,15 +62,13 @@ public class Record {
 	public void setBillNumber(int billNumber) {
 		this.billNumber = billNumber;
 	}
-	public Record(int rid, int mid, int feed, int billNumber) {
-		super();
-		this.rid = rid;
-		this.mid = mid;
-		this.feed = feed;
-		this.billNumber = billNumber;
+	public String getPname() {
+		return pname;
 	}
-	public Record() {
-		super();
+	public void setPname(String pname) {
+		this.pname = pname;
 	}
+	
+	
 	
 }

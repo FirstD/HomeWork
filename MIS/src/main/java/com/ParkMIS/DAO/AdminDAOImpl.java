@@ -12,7 +12,7 @@ public class AdminDAOImpl implements AdminDAO {
 	public boolean add(Admin admin) {
 		// TODO Auto-generated method stub
 		return DbUtil.executeUpdate("insert into admin values(?,?,?,?,?)",
-				new Object[]{admin.getAid(),admin.getName(),admin.getPassword(),admin.getPower(),admin.getPid()});
+				new Object[]{admin.getAid(),admin.getName(),admin.getPassword(),admin.getPid(),admin.getPower()});
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class AdminDAOImpl implements AdminDAO {
 	@Override
 	public boolean update(Admin adminO, Admin adminN) {
 		// TODO Auto-generated method stub
-		return DbUtil.executeUpdate("update admin set name=?,password=?,pid=?,power=? where sid=?",
+		return DbUtil.executeUpdate("update admin set name=?,password=?,pid=?,power=? where aid=?",
 				new Object[]{adminN.getName(),adminN.getPassword(),adminN.getPid(),adminN.getPower(),adminO.getAid()});
 	}
 
@@ -38,6 +38,7 @@ public class AdminDAOImpl implements AdminDAO {
 				admin.setAid(rs.getInt(1));
 				admin.setName(rs.getString(2));
 				admin.setPassword(rs.getString(3));
+				admin.setPower(rs.getString(5));
 				admin.setPid(rs.getInt(4));
 			}
 		}catch(SQLException e){

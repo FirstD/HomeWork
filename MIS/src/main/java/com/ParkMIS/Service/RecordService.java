@@ -1,5 +1,7 @@
 package com.ParkMIS.Service;
 
+import java.util.List;
+
 import com.ParkMIS.DAO.RecordDAO;
 import com.ParkMIS.entity.Record;
 
@@ -19,5 +21,15 @@ public class RecordService {
 	}
 	public void setRecordDAO(RecordDAO recordDAO) {
 		this.recordDAO = recordDAO;
+	}
+	public List<Record> hxc(String name){
+		return recordDAO.hxc(name);
+	}
+	public List<Record> ac(int billNumber){
+		return recordDAO.ac(billNumber);
+	}
+	
+	public List<Record> ad(int pid){
+		return recordDAO.ad(pid);
 	}
 }

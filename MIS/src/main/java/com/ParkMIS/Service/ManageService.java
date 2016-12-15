@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.ParkMIS.DAO.ManageDAO;
 import com.ParkMIS.entity.Manage;
+import com.ParkMIS.entity.Vip;
 
 public class ManageService {
 	private ManageDAO manageDAO;
@@ -25,5 +26,11 @@ public class ManageService {
 	public List<Manage> hy(int vid) throws Exception{
 		return manageDAO.hy(vid);
 		
+	}
+	public Manage getLastByVip(Vip vip){
+		return manageDAO.getLastByVip(vip);
+	}
+	public Manage getManageByOid(int i){
+		return manageDAO.getMangeByOid(i);
 	}
 }
